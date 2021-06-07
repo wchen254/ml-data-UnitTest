@@ -4,9 +4,9 @@ from random import randint
 
 # test purpose
 df = pd.DataFrame({'subject_uid': [randint(1, 9) for x in range(10)],
-                   'audio_path': [randint(1, 9)*10 for x in range(10)],
+                   'audio_path': [randint(1, 9) for x in range(10)],
                    'pcr_test_result_inferred': ['dddd' if randint(1, 9)==1 else 'positive' for x in range(10)],
-                   'audio_type': [randint(1, 9)*100 for x in range(10)]})
+                   'audio_type': [randint(1, 9) for x in range(10)]})
 
 
 def test_column_names(df):
