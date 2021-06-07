@@ -8,7 +8,7 @@ df = pd.DataFrame({'subject_uid': [randint(1, 9) for x in range(10)],
                    'pcr_test_result_inferred': ['dddd' if randint(1, 9)==1 else 'positive' for x in range(10)],
                    'audio_type': [randint(1, 9) for x in range(10)]})
 
-# time complex: O(mlog(n)), space complx: O(m), where m is number of elements in the set; n is number of columns in df
+# Time Complexity: O(mlog(n)), Space Complexity: O(m), where m is number of elements in the set; n is number of columns in df
 def test_column_names(df):
     if not set(['subject_uid',
                 'audio_path',
@@ -20,7 +20,7 @@ def test_column_names(df):
         return False
     return True
 
-# time complex: O(nlog(m)), space complx: O(m), where m is number of elements in the set; n is number of rows in 
+# Time Complexity: O(nlog(m)), Space Complexity: O(m), where m is number of elements in the set; n is number of rows in 
 # df['test_label_values']
 def test_label_values(df):
     string={'positive',
