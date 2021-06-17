@@ -14,6 +14,7 @@ def test_column_names(df):
                 'audio_path',
                 'audio_type',
                 'country',
+                'age',
                 'source',
                 'pcr_test_result',
                 'pcr_test_result_inferred']).issubset(df.columns):
